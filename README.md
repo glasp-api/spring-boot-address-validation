@@ -1,7 +1,7 @@
-#Spring Boot Address Validation
+# Spring Boot Address Validation
 Address Validation provides a Spring Boot wrapper for searching the closest matching addresses with the Address Search API of GLASP.
 
-##Installation
+## Installation
 In case you use Maven, simply add the dependency for the address validation to your pom file.
 ```html
 <dependency>
@@ -11,7 +11,7 @@ In case you use Maven, simply add the dependency for the address validation to y
 </dependency>
 ```
 
-##Configuration
+## Configuration
 Provide a `ValidationService` bean in a configuration class.
 
 ```java
@@ -28,7 +28,7 @@ public ValidationService provideValidationService(){
 With the `ValidationServiceBuilder` you can specify your GLASP credentials. Please visit https://www.glasp.eu for more details on how to get your free credentials.
 The `ValidationServiceBuilder` lets you specify a timeout for the maximum time you would like to wait for the response from the GLASP servers.
 
-##Searching for addresses
+## Searching for addresses
 With the `ValidationService` you can send search requests to the GLASP API.
 
 ```java
@@ -41,6 +41,6 @@ try {
 
 For more details on the search request and the exceptions, which the API can throw, please have a look at our API documentation at https://glasp.eu/documentation.
 
-##Further Information
+## Further Information
 
 For more information on address validations with GLASP, you can check out our E2E example at [to be added] and our website at https://www.glasp.eu.
